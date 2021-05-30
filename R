@@ -1,0 +1,11 @@
+rm(list=ls())
+gc() 
+.libPaths('C:/RproLab')
+.libPaths()        #mlbanch 설치해야됨
+library(mlbench)
+data('BostonHousing')
+myds <- BostonHousing[,c('crim','rm','dis','tax','medv')]
+library(treemap)
+data(GNI2014)
+head(GNI2014)
+library(ggplot2)
